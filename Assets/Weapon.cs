@@ -1,13 +1,13 @@
 using UnityEngine;
 using Photon.Pun;
-using Cinemachine;
+
 
 public class Weapon : MonoBehaviour
 {
     [Header("Weapon Settings")]
     public int damage = 10;
     public float fireRate = 1f;
-    [SerializeField] private CinemachineVirtualCamera playerCamera; // Serializado para asignación en Inspector
+    [SerializeField] private Camera playerCamera; // Serializado para asignación en Inspector
 
     [Header("VFX")]
     public GameObject muzzleVFX;
